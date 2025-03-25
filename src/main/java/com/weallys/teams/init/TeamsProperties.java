@@ -7,6 +7,7 @@ public class TeamsProperties {
 
 	private String baseUrl;
 	private String teamsEndPoint;
+	private boolean enabled = false;
 
 	public String getBaseUrl() {
 		return baseUrl;
@@ -22,5 +23,13 @@ public class TeamsProperties {
 
 	public void setTeamsEndPoint(String teamsEndPoint) {
 		this.teamsEndPoint = teamsEndPoint;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 }
