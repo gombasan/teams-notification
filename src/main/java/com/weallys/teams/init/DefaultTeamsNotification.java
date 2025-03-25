@@ -24,7 +24,7 @@ public class DefaultTeamsNotification implements TeamsNotification {
 		String jsonMessage = JsonUtil.convertToJson(message);
 
 		webClient.post()
-			.uri(properties.getBaseUrl())
+			.uri(properties.getTeamsEndPoint())
 			.contentType(MediaType.APPLICATION_JSON)
 			.bodyValue(jsonMessage)
 			.retrieve()
