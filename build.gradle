@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.weallys'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+
+    compileOnly 'org.springframework:spring-context:6.0.13'
+    compileOnly 'org.springframework:spring-beans:6.0.13'
+    compileOnly 'org.springframework.boot:spring-boot-autoconfigure:3.0.12'
+
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.12'
+
+
+    // 필수: AOP 기능 제공
+    compileOnly 'org.springframework:spring-aop:6.0.13'
+    compileOnly 'org.aspectj:aspectjweaver:1.9.19'
+
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+}
+
+test {
+    useJUnitPlatform()
+}
