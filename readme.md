@@ -3,8 +3,9 @@
 > A lightweight Spring Boot library for sending Microsoft Teams messages using AOP.  
 > Annotate your DTOs and methods, and this library handles the rest.
 
----
+<br>
 
+---
 ## ✨ Features
 
 - ✅ AOP-based automatic message dispatch
@@ -14,6 +15,8 @@
 - 🚀 Built for Spring Boot 3+
 
 ---
+
+<br>
 
 ## 🛠️ Installation
 
@@ -37,6 +40,8 @@ dependencies {
 }
 ```
 
+<br>
+
 ## ⚙️ Configuration
 
 ```yaml
@@ -53,6 +58,8 @@ teams:
   notification:
     enabled: false
 ```
+
+<br>
 
 ## 🚀 How It Works
 
@@ -76,6 +83,8 @@ public void register(UserDto dto) {
     // Your business logic here
 }
 ```
+
+<br>
 
 ## 🧰 Customizing Section Text Style
 
@@ -105,8 +114,13 @@ public class CustomTeamsConfig {
 
 When this bean is present, the default factory will be ignored thanks to `@ConditionalOnMissingBean`.
 
+<br>
+
 ## 🧪 Example Teams Message Output
 ![img.png](img.png)
+
+
+<br>
 
 ## 🧠 Advanced Notes
 
@@ -114,6 +128,8 @@ When this bean is present, the default factory will be ignored thanks to `@Condi
 - Uses reflection to extract annotated fields
 - Auto-configures only if teams.notification.enabled=true
 - Designed to be extended easily (factories, decorators, etc.)
+
+<br>
 
 ## 🧩 Dependencies
 
@@ -126,6 +142,8 @@ When this bean is present, the default factory will be ignored thanks to `@Condi
 
 > ⚠️ This library assumes **Spring Boot 3+** and **WebClient** usage.
 
+
+<br>
 
 ## 📄 License
 MIT License. Feel free to use, modify, and contribute.
