@@ -6,9 +6,9 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 
-import com.weallys.teams.ab.TeamsContent;
-import com.weallys.teams.ab.TeamsMessage;
-import com.weallys.teams.ab.TeamsSection;
+import com.weallys.teams.domain.TeamsContent;
+import com.weallys.teams.domain.TeamsMessage;
+import com.weallys.teams.domain.TeamsSection;
 import com.weallys.teams.annotation.TeamsEvent;
 import com.weallys.teams.service.TeamsNotification;
 

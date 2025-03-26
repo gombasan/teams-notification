@@ -1,4 +1,4 @@
-package com.weallys.teams.ab;
+package com.weallys.teams.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import com.weallys.teams.aop.SectionExtractor;
 import com.weallys.teams.aop.TeamsSpringAop;
-import com.weallys.teams.init.DefaultSectionText;
+import com.weallys.teams.init.DefaultSectionDecorator;
 import com.weallys.teams.TeamsSectionTextFactory;
 import com.weallys.teams.init.DefaultTeamsNotification;
 import com.weallys.teams.init.TeamsProperties;
@@ -33,7 +33,7 @@ public class TeamsNotificationAutoConfigure {
 	@Bean
 	@ConditionalOnMissingBean
 	public TeamsSectionTextFactory sectionTextFactory() {
-		return (DefaultSectionText::new);
+		return (DefaultSectionDecorator::new);
 	}
 
 	@Bean

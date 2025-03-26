@@ -1,8 +1,8 @@
 package com.weallys.teams;
 
-import com.weallys.teams.ab.SectionText;
+import com.weallys.teams.domain.SectionDecorator;
 
 @FunctionalInterface
 public interface TeamsSectionTextFactory {
-	SectionText create(String title, String value);
+	SectionDecorator create(String title, String value);
 }

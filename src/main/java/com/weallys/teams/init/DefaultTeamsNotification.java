@@ -3,7 +3,7 @@ package com.weallys.teams.init;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.weallys.teams.ab.TeamsMessage;
+import com.weallys.teams.domain.TeamsMessage;
 import com.weallys.teams.service.TeamsNotification;
 import com.weallys.teams.util.JsonUtil;
 

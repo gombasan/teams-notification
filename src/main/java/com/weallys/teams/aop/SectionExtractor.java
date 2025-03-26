@@ -9,7 +9,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import com.weallys.teams.TeamsSectionTextFactory;
-import com.weallys.teams.ab.TeamsSection;
+import com.weallys.teams.domain.TeamsSection;
 import com.weallys.teams.annotation.MessageField;
 
 public final class SectionExtractor {
